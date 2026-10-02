@@ -1,6 +1,19 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+st.title("Evaluación de un lote")
+
+pH = st.number_input(
+    "pH",
+    value=6.5
 )
+
+temperatura = st.number_input(
+    "Temperatura (°C)",
+    value=23.0
+)
+
+if st.button("Evaluar"):
+
+    # Completa aquí la lógica
+
+    st.write(f"Resultado: {resultado}")
